@@ -7,10 +7,10 @@ Deep learning has been succesfully employed in several domains using large amoun
 
 The aim of this project is to asses a proposed method that leverages unlabeled data to improve model performance using few labeled examples. The method performance is also compared with other method's.
 
-We use two benchmark datasets (MNIST and FASHION) to test four models, which are a purely supervised, a semi-supervised layer-wise, a self-training and a self-training layer-wise model, the latter is our proposed model. The models are built with recurrent network architecture LSTM-based.
+We use two benchmark datasets (MNIST and FASHION) to test four methods, which are a purely supervised, a semi-supervised layer-wise, a self-training and a self-training layer-wise model, this latter is our proposed method. The models are built with recurrent network architecture LSTM-based.
 
 # Dataset configuration for experiments
- The original subset of the datasets are changed to our subsets in order to carry out the experiments. To explore the case when we have a small number of labeled examples we dramatically reduce the number of training labeled examples from 60k to 10k and the rest are made for pre-training or as unlabeled data, which is 50k examples.
+The original subset of the datasets are changed to our subsets in order to carry out the experiments. To explore the case when we have a small number of labeled examples we dramatically reduce the number of training labeled examples from 60k to 10k and the rest are made for pre-training or as unlabeled data, which are 50k examples. The test subset remains the same.
 
 
 | Dataset                          | Original subsets | Our subsets          |
@@ -25,7 +25,7 @@ We use two benchmark datasets (MNIST and FASHION) to test four models, which are
 
 # Experiment desing
  
-For example, for the MNIST dataset we considerably reduce the amount of training labeled examples from 60k (100%) to 10k, which represents the 16.67% of the total training examples and for different experiments we reduce it till 200 examples, which is the 0.33%. This smallest percentage of labeled examples is the worst case among our experiments. For FASHION dataset the same way of reduction is applied.
+For the MNIST dataset we considerably reduce the amount of training labeled examples from 60k (100%) to 10k, which represents the 16.67% of the total training examples and for different experiments we reduce it till 200 examples, which is the 0.33%. This smallest percentage of labeled examples is the worst case among our experiments. For FASHION dataset the same way of reduction is applied.
 
 | MNIST | FASHION | %      |
 | :---- | :------ | :----- |
