@@ -47,3 +47,9 @@ For MNIST dataset, from the original subset training examples the few labeled ex
 | 0\.4k | 0\.4k   | 0\.67  |
 | 0\.3k | 0\.3k   | 0\.50  |
 | 0\.2k | 0\.2k   | 0\.33  |
+
+# Results for MNIST dataset
+
+The figures above illustrate how semi-supervised methods utilize unlabaled data to improve accuracy, so with our self-training layer-wise method we want to observe how it can increase this value taking into account that it combines the capacity of both methods self-training and layer-wise, which use unlabeled examples. The Fig. 6.8 shows that the self-training layer-wise method can benefit itself with unlabeled data by using it twice in a joined capacity of layer-wise procedure and self-training to have a better accuracy. In other words, it can be seen as the greedy layer-wise
+strategy but it uses the self-training method to fine tune instead of a supervised learning. In particular, the Fig. 6.8 demonstrates that the self-training layer-wise
+method performs almost always superior in the range 0.33%-3.33% except only in 1.67% and then slightly better in 5.00%-16.67% than the rest of methods with MNIST dataset. We can also closely observe that our method achieves much better accuracies where the percentages of training examples are equal or less than 3.33%.
