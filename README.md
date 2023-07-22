@@ -25,7 +25,7 @@ The original subset of the datasets are changed to our subsets in order to carry
 
 # Experiment desing
  
-For the MNIST dataset we considerably reduce the amount of training labeled examples from 60k (100%) to 10k, which represents the 16.67% of the total training examples and for different experiments we reduce it till 200 examples, which is the 0.33%. This smallest percentage of labeled examples is the worst case among our experiments. For FASHION dataset the same way of reduction is applied.
+For MNIST dataset, from the original subset training examples the few labeled examples represents the 16.67%, which is reduced until 0.33% for different experiments. This smallest percentage of labeled examples is the worst case. For FASHION dataset the same reduction is applied.
 
 | MNIST | FASHION | %      |
 | :---- | :------ | :----- |
