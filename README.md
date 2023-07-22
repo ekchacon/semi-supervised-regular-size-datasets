@@ -1,6 +1,14 @@
 # Semi-supervised classification using two benchmark image datasets
 Four methods comparison performance with few labeled datasets.
 
+# Datasets
+
+The next two datasets contain grayscale images of 28 x 28 pixels.
+
+The MNIST is a dataset of handwritten digits (0 - 9) with 10 classes and 60,000 images for training and 10,000 for testing.
+
+The Fashion dataset has 10 classes as well and consist of images of Zolando’s articles from T-Shirt, Trousers, Bags, Ankle boots and others. It has 60,000 and 10,000 images for training and testisng, respectively.
+
 # The aim of the project
 
 Deep learning has been succesfully employed in several domains using large amount of labeled datasets, which are carefully built and for a long time. Obtaining massive annotated datasets is labor-intensive and time-consuming. In many areas, the lack of labeled data limits the use of deep learning as a powerful tool to resolve complex problems in real world applications. However, data with unknown labels is the way vast quantities of data exists in the real world.
@@ -54,3 +62,8 @@ The self-training layer-wise method can benefit itself twice with unlabeled data
 
 <img width="765" alt="image" src="https://github.com/ekchacon/semi-supervised-regular-size-datasets/assets/46211304/715a9c89-2819-4c5a-a59b-8fddf3fbcb3e">
 
+# Results for FASHION dataset
+
+Looking at the FASHION dataset chart, there is a slightly improvement of the self-training layer-wise performance over the other methods, which happen in the percentages of labeled examples of 0.67%-0.83%, 1.17%-1.50% and 5.00%-15.00%. Although not better than with the MNIST dataset, our method can still reach good accuracies than the other methods in percentages smaller than 3.33%.
+
+<img width="770" alt="image" src="https://github.com/ekchacon/semi-supervised-regular-size-datasets/assets/46211304/791929d8-c2b8-45be-aa16-7807a5b50e24">
