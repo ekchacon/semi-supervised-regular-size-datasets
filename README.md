@@ -1,4 +1,5 @@
 # Semi-supervised classification using two benchmark image datasets
+
 Four methods comparison performance with few labeled datasets.
 
 # Datasets
@@ -21,7 +22,8 @@ We use two benchmark datasets (MNIST and FASHION) to test four methods, which ar
 
 We introduce an approach where the self-training method is employed to fine tune a layer-wise pre-trained network and we called it the self-training layer-wise method. The self-training method has shown good results with deep models when labeled examples are scarcely available. The layer-wise procedure is utilised to learn hidden features from large amount of unlabeled data and it acts as a regulariser of the deep neural network weights.
 
-<img width="643" alt="image" src="https://github.com/ekchacon/semi-supervised-regular-size-datasets/assets/46211304/55eff7c4-f9aa-46db-b825-ff4b9f5c8bdc">
+<img width="500" alt="image" src="https://github.com/ekchacon/semi-supervised-regular-size-datasets/assets/46211304/eb330423-699b-46e6-95a5-42e6f5ef1e8c">
+
 
 The greedy layer-wise strategy and self-training are both semi-supervised learning and they manage unlabaled data in different ways it is possible to join these two methods to exploit unlabeled data twice. The proposed method works in 2 phases.
 
