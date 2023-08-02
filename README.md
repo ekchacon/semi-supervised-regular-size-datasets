@@ -12,7 +12,7 @@ The Fashion dataset has 10 classes as well and consist of images of Zolando’s 
 
 # The aim of the project
 
-Deep learning has been succesfully employed in several domains using large amount of labeled datasets, which are carefully built and for a long time. Obtaining massive annotated datasets is labor-intensive and time-consuming. In many areas, the lack of labeled data limits the use of deep learning as a powerful tool to resolve complex problems in real world applications. However, data with unknown labels is the way vast quantities of data exists in the real world.
+Deep learning has been succesfully employed in several domains using large amount of labeled datasets, which are carefully built for a long time. Obtaining massive annotated datasets is labor-intensive and time-consuming. In many areas, the lack of labeled data limits the use of deep learning as a powerful tool to resolve complex problems in real world applications. However, data with unknown labels is the way vast quantities of data exists in the real world.
 
 The aim of this project is to asses a proposed method that leverages unlabeled data to improve model performance using few labeled examples. The method performance is also compared with other method's.
 
@@ -20,7 +20,7 @@ We use two benchmark datasets (MNIST and FASHION) to test four methods, which ar
 
 # The proposed method
 
-We introduce an approach where the self-training method is employed to fine tune a layer-wise pre-trained network and we called it the self-training layer-wise method. The self-training method has shown good results with deep models when labeled examples are scarcely available. The layer-wise procedure is utilised to learn hidden features from large amount of unlabeled data and it acts as a regulariser of the deep neural network weights.
+We introduce an approach where the self-training method is employed to fine tune a layer-wise pre-trained network and we called it the self-training layer-wise method. The self-training method has shown good results with deep models when labeled examples are scarcely available (Li, et al., [2019](https://doi.org/10.1007/s12083-018-0702-9) and Xie, et al., [2020](https://doi.org/10.48550/arXiv.1911.04252)). The layer-wise procedure is utilised to learn hidden features from large amount of unlabeled data and it acts as a regulariser of the deep neural network weights (Xu, et al., [2018](https://doi.org/10.1109/ICMEW.2018.8551584)).
 
 <img width="500" alt="image" src="https://github.com/ekchacon/semi-supervised-regular-size-datasets/assets/46211304/1101442f-e1a8-4a38-a413-01c982a431bc">
 
