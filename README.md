@@ -1,6 +1,11 @@
 # Semi-supervised classification using two benchmark image datasets
 
-Four methods comparison performance with few labeled datasets.
+Semi-supervised classification with TensorFlow employing 4 methods:
+
+- Supervised
+- Semi-supervised layer-wise
+- Self-training
+- Our proposed method: Self-training layer-wise.
 
 # Datasets
 
