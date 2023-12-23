@@ -84,3 +84,9 @@ The self-training layer-wise method can benefit itself twice with unlabeled data
 Looking at the FASHION dataset chart, there is a slightly improvement of the self-training layer-wise performance over the other methods, which happen in the percentages of labeled examples of 0.67%-0.83%, 1.17%-1.50% and 5.00%-15.00%. Although not better than with the MNIST dataset, our method can still reach good accuracies than the other methods in percentages smaller than 3.33%.
 
 <img width="770" alt="image" src="https://github.com/ekchacon/semi-supervised-regular-size-datasets/assets/46211304/791929d8-c2b8-45be-aa16-7807a5b50e24">
+
+# Discussion
+
+We introduce a novel methodology designed for the optimal utilization of unlabeled data. This method underwent testing in scenarios with scarce labeled data, specifically on the MNIST and FASHION datasets. In the case of MNIST, our method demonstrated superior accuracy compared to alternative methods, particularly in instances where training examples were below 1.67%. However, the observed accuracy improvement of our method over others with the FASHION dataset seemed consistent across all dataset sizes, with less pronounced distinctions in cases of severe data scarcity, specifically when the percentage was less than 1.67%.
+
+On the other hand, beyond the critical scenarios or beyond the 3.33% of training examples, the outcomes of alternative methods closely approximate those of the proposed method for the MNIST and FASHION datasets. This trend is attributed to the growing number of training examples. Thus, harnessing unlabeled data through semi-supervised methods proves most valuable in situations characterized by a severe shortage of labeled data.
