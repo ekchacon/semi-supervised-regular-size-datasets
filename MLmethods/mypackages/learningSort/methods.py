@@ -219,6 +219,10 @@ def preTraining(X_train,
       #L2ToPretrain[1]( L1Pretrained [0] and [1]Dense)
       model.layers[0].set_weights(pretrainedModel.layers[0].get_weights())
       model.layers[2].set_weights(pretrainedModel.layers[1].get_weights())
+
+      #print("***")
+      model.layers[0].trainable = False
+      #model.summary()
     
     ##if 3L then Load
     if L == 3:
@@ -228,6 +232,11 @@ def preTraining(X_train,
       model.layers[0].set_weights(pretrainedModel.layers[0].get_weights())
       model.layers[1].set_weights(pretrainedModel.layers[1].get_weights())
       model.layers[3].set_weights(pretrainedModel.layers[2].get_weights())
+
+      #print("***")
+      model.layers[0].trainable = False
+      model.layers[1].trainable = False
+      #model.summary()
     
     #training
     stepsPerEpoch = math.floor(X_train.shape[0]/trainBATCH_SIZE)
