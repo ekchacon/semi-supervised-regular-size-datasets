@@ -4,7 +4,7 @@ import math
 from mypackages.learningSort import methods as met
 import os
 import csv
-from numpy import genfromtxt
+from numpy import genfromtxt 
 
 def semiSupervised(X_train, 
                    X_test, 
